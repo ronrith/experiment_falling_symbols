@@ -1,0 +1,53 @@
+body{
+	background-color: black;
+}
+.author{
+	color: white;
+	font-weight: bold;
+	opacity: 0.5;
+	padding: 8px;
+	text-align: right;
+}
+
+.fall{
+	
+	font-size: 30px; 
+	left: 300px;
+	opacity: .5;
+	position: fixed;  
+	top: -200px;
+	z-index: -1;
+
+	-webkit-animation: 	falling;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+	-moz-animation:    	falling;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+	-o-animation:      	falling;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;	
+
+	animation:         	falling;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes falling {
+	from { top: -200px; transform:rotate(0deg);}
+	to   { top: 1280px; transform:rotate(360deg);}
+}
+@-moz-keyframes falling {
+	from { top: -200px; transform:rotate(0deg);}
+	to   { top: 1280px; transform:rotate(360deg);}
+}
+@-o-keyframes falling {
+	from { top: -200px; transform:rotate(0deg);}
+	to   { top: 1280px; transform:rotate(360deg);}
+}
+@keyframes falling {
+	from { top: -200px; transform:rotate(0deg);}
+	to   { top: 1280px; transform:rotate(360deg);}
+}
